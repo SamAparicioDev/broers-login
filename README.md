@@ -14,7 +14,7 @@ Configuramos el archivo application.properties que se encuentra en la carpeta sr
   Alli encontraremos los endpoints y los modelos; en los entities encontraremos dos:
 
   El de usuario: User-Entity-Controller, el cual tiene el siguiente flujo:
-    - Creamos un usuario primero con la ruta /api/user/save , mandandole en el body el nombre, el apellido y el correo, al correo de la persona llegara un token
+    - Creamos un usuario primero con la ruta /api/user/save , mandandole en el body el nombre, el apellido y el correo (En caso de no llegar por favor revisar el spam), al correo de la persona llegara un token
     - Con ese token consumimos el endpoint api/user/create-password/{token} donde mandamos por la ruta el token que nos llego al correo
     y en el body enviamos la clave que queremos asignar, (Recordemos que este token es de unico uso) con eso, ya podemos iniciar sesion, en caso de olvidar la clave, vamos al endpoint
     /api/user el cual nos trae todos los usuarios, vemos el de nosotros, y agarramos el id, para consumir el endpoint:
