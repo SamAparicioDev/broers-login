@@ -1,4 +1,5 @@
 El paso a paso para poder correr el proyecto es: 
+  - Clonemos el proyecto y los abrimos con un IDE que soporte Spring Boot; sugieron IntelliJ o EclipeSpringBoot
   - Cargar las dependencias, las cuales estan en maven
   - Inicializar XAMPP para iniciar el servidor de MySQL / O tener instalado directamente el servidor de MySQL: https://dev.mysql.com/downloads/mysql/
   
